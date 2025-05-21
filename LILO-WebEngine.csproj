@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows10.0.22000.0</TargetFramework>
+    <RootNamespace>LILO_WebEngine</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Core\Handler\Core\**" />
+    <Compile Remove="Core\Interfaces\**" />
+    <EmbeddedResource Remove="Core\Handler\Core\**" />
+    <EmbeddedResource Remove="Core\Interfaces\**" />
+    <None Remove="Core\Handler\Core\**" />
+    <None Remove="Core\Interfaces\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Remote.Linq.Newtonsoft.Json" Version="7.1.0" />
+  </ItemGroup>
+
+</Project>
